@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Devlattice Academy | Practical Technology Education</title>
+  <meta name="description" content="Devlattice Academy, by Devlattice System, offers practical technology education: web development, frontend, backend, full stack, UI/UX design and programming fundamentals.">
+  <meta name="theme-color" content="#F7F7F4">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Devlattice Academy | Learn. Build. Create What’s Next.">
+  <meta property="og:description" content="Practical technology education designed to turn curious minds into confident developers, creators, and problem solvers.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&h=630&q=75">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23171918'/%3E%3Cpath d='M8 8h16M8 16h16M8 24h16M8 8v16M16 8v16M24 8v16' stroke='%23C6F36A' stroke-width='2' fill='none'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a class="brand" href="#home" aria-label="Devlattice Academy, home">
+        <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+          <rect width="32" height="32" fill="currentColor"/>
+          <path d="M8 8h16M8 16h16M8 24h16M8 8v16M16 8v16M24 8v16" stroke="#C6F36A" stroke-width="1.6" fill="none"/>
+        </svg>
+        <span class="brand__text">Devlattice <span>Academy</span></span>
+      </a>
+
+      <nav class="nav__menu" id="navMenu" aria-label="Primary">
+        <ul class="nav__list">
+          <li><a href="#home" data-nav="home">Home</a></li>
+          <li><a href="#about" data-nav="about">About</a></li>
+          <li><a href="#programs" data-nav="programs">Programs</a></li>
+          <li><a href="#projects" data-nav="projects">Projects</a></li>
+          <li><a href="#team" data-nav="team">Team</a></li>
+        </ul>
+        <a class="btn btn--lime nav__cta-mobile" href="#contact">Contact Us</a>
+      </nav>
+
+      <a class="btn btn--dark nav__cta" href="#contact">Contact Us</a>
+
+      <button class="nav__toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="hero__label hero-in" style="--i:0">
+            <span class="hero__label-mark" aria-hidden="true"></span>
+            Devlattice Academy, by Devlattice System
+          </p>
+
+          <h1 class="hero__title" id="hero-title">
+            <span class="hero__line hero-in" style="--i:1">Learn.</span>
+            <span class="hero__line hero__line--2 hero-in" style="--i:2">Build.</span>
+            <span class="hero__line hero__line--3 hero-in" style="--i:3">Create</span>
+            <span class="hero__line hero__line--4 hero-in" style="--i:4">What’s Next.</span>
+          </h1>
+
+          <p class="hero__text hero-in" style="--i:5">
+            Practical technology education designed to turn curious minds into confident developers, creators, and problem solvers.
+          </p>
+
+          <div class="hero__actions hero-in" style="--i:6">
+            <a class="btn btn--lime" href="#programs">Explore Programs</a>
+            <a class="btn btn--outline" href="#projects">Discover Our Work</a>
+          </div>
+        </div>
+
+        <figure class="hero__media hero-in" style="--i:2">
+          <img
+            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&h=1250&q=75"
+            alt="A small group of students working together around laptops in a bright workspace"
+            width="1000" height="1250" fetchpriority="high">
+          <span class="hero__grid-overlay" aria-hidden="true"></span>
+          <span class="hero__corner hero__corner--tl" aria-hidden="true"></span>
+          <span class="hero__corner hero__corner--br" aria-hidden="true"></span>
+          <figcaption class="hero__caption">Learning happens in small teams, on real work.</figcaption>
+        </figure>
+      </div>
+
+      <div class="container hero__foot">
+        <a class="scroll-cue" href="#about" aria-label="Scroll to the About section">
+          <span class="scroll-cue__line" aria-hidden="true"></span>
+          Scroll
+        </a>
+        <p class="hero__foot-note">Sample programs and content. Details will be confirmed before launch.</p>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container about__grid">
+        <div class="about__intro" data-reveal>
+          <h2 class="h2" id="about-title">More Than Learning. It’s About Building.</h2>
+          <p class="lead">
+            At DevLattice Academy, we believe technology education should go beyond theory. Our focus is on practical learning, real-world projects, and developing skills that prepare individuals for the evolving technology industry.
+          </p>
+        </div>
+
+        <div class="about__images" data-reveal>
+          <img class="about__img about__img--main"
+            src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&h=1000&q=75"
+            alt="Colleagues reviewing work together at a row of computers" width="800" height="1000" loading="lazy">
+          <img class="about__img about__img--small"
+            src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&h=450&q=75"
+            alt="Laptop screen showing lines of code" width="600" height="450" loading="lazy">
+        </div>
+
+        <dl class="about__list" data-reveal>
+          <div class="about__row">
+            <dt>Our Story</dt>
+            <dd>Devlattice Academy is the learning arm of Devlattice System, a technology company. We teach the way software is actually made: in small steps, with real tools, on projects that have a purpose.</dd>
+          </div>
+          <div class="about__row">
+            <dt>Our Vision</dt>
+            <dd>A generation of confident developers and creators who can learn on their own, build responsibly, and keep growing as technology changes.</dd>
+          </div>
+          <div class="about__row">
+            <dt>Our Mission</dt>
+            <dd>To deliver practical, project-first education that turns curiosity into skill, and skill into a portfolio that people can see.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ PROGRAMS ============ -->
+    <section class="section section--alt programs" id="programs" aria-labelledby="programs-title">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <h2 class="h2" id="programs-title">Skills That Move You Forward.</h2>
+          <p class="section__note">These are sample programs. They are not final until the academy confirms its offering.</p>
+        </header>
+        <ul class="program-list" id="programList"></ul>
+      </div>
+    </section>
+
+    <!-- ============ LEARNING APPROACH ============ -->
+    <section class="section section--dark approach" id="approach" aria-labelledby="approach-title">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <h2 class="h2" id="approach-title">Learn by Doing. Grow by Building.</h2>
+        </header>
+
+        <ol class="steps" id="steps" data-reveal>
+          <li class="step">
+            <span class="step__num" aria-hidden="true">01</span>
+            <h3 class="step__title">Learn the Fundamentals</h3>
+            <p>Start with the core ideas: how the web works, how to think in code, and how to read documentation.</p>
+          </li>
+          <li class="step">
+            <span class="step__num" aria-hidden="true">02</span>
+            <h3 class="step__title">Practice Through Projects</h3>
+            <p>Apply each concept straight away in small, focused exercises that build confidence step by step.</p>
+          </li>
+          <li class="step">
+            <span class="step__num" aria-hidden="true">03</span>
+            <h3 class="step__title">Build Real Solutions</h3>
+            <p>Take on larger projects with real constraints: planning, teamwork, feedback and deadlines.</p>
+          </li>
+          <li class="step">
+            <span class="step__num" aria-hidden="true">04</span>
+            <h3 class="step__title">Develop Your Portfolio</h3>
+            <p>Finish with work you can show, explain and keep improving after the course ends.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section projects" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <h2 class="h2" id="projects-title">From Ideas to <span class="nowrap">Real-World</span> Projects.</h2>
+          <p class="section__note">Sample projects shown as placeholders. They are not real student achievements.</p>
+        </header>
+        <div class="project-grid" id="projectGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ TEAM ============ -->
+    <section class="section section--alt team" id="team" aria-labelledby="team-title">
+      <div class="container team__grid">
+        <header class="team__head" data-reveal>
+          <h2 class="h2" id="team-title">Meet the People Behind the Learning.</h2>
+          <p class="section__note">Placeholder profiles. Replace them with real instructors and mentors in <code>js/script.js</code>.</p>
+        </header>
+        <ul class="team-list" id="teamList"></ul>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="section testimonials" id="testimonials" aria-labelledby="testimonials-title">
+      <div class="container testimonials__grid">
+        <header class="testimonials__head" data-reveal>
+          <h2 class="h2" id="testimonials-title">Experiences That Speak.</h2>
+          <p class="section__note">Sample testimonials. Replace them with real student feedback.</p>
+          <div class="slider-controls">
+            <button class="icon-btn" id="tPrev" type="button" aria-label="Previous testimonial" data-icon="arrow-left"></button>
+            <button class="icon-btn" id="tNext" type="button" aria-label="Next testimonial" data-icon="arrow-right"></button>
+            <span class="slider-count" id="tCount" aria-hidden="true">1 / 1</span>
+          </div>
+        </header>
+
+        <div class="slider" id="slider" role="region" aria-roledescription="carousel" aria-label="Student testimonials" tabindex="0">
+          <div class="slider__track" id="sliderTrack"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CERTIFICATES ============ -->
+    <section class="section section--alt certificates" id="certificates" aria-labelledby="certs-title">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <h2 class="h2" id="certs-title">Every Milestone Matters.</h2>
+          <p class="section__note">Sample certificates and milestones. Select any item to preview it.</p>
+        </header>
+        <div class="cert-grid" id="certGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact__grid">
+        <div class="contact__info" data-reveal>
+          <h2 class="h2" id="contact-title">Let’s Start Your Journey.</h2>
+          <p class="lead">Tell us what you want to learn and we will help you find the right place to begin.</p>
+
+          <ul class="contact__details">
+            <li><span class="contact__k">Email</span><a href="mailto:info@devlattice.example">info@devlattice.example</a></li>
+            <li><span class="contact__k">Phone</span><a href="tel:+000000000000">+00 000 000 0000</a></li>
+            <li><span class="contact__k">Location</span><span>Your city, country</span></li>
+          </ul>
+          <p class="section__note">Contact details above are placeholders.</p>
+
+          <ul class="socials" data-socials aria-label="Social media"></ul>
+        </div>
+
+        <form class="form" id="contactForm" novalidate data-reveal>
+          <div class="field">
+            <label for="fullName">Full name</label>
+            <input id="fullName" name="fullName" type="text" autocomplete="name" required aria-describedby="fullName-err">
+            <p class="field__error" id="fullName-err" role="alert"></p>
+          </div>
+
+          <div class="field">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-err">
+            <p class="field__error" id="email-err" role="alert"></p>
+          </div>
+
+          <div class="field">
+            <label for="phone">Phone number <span class="optional">(optional)</span></label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" aria-describedby="phone-err">
+            <p class="field__error" id="phone-err" role="alert"></p>
+          </div>
+
+          <div class="field">
+            <label for="program">Interested program</label>
+            <select id="program" name="program" required aria-describedby="program-err">
+              <option value="">Select a program</option>
+            </select>
+            <p class="field__error" id="program-err" role="alert"></p>
+          </div>
+
+          <div class="field field--full">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required aria-describedby="message-err"></textarea>
+            <p class="field__error" id="message-err" role="alert"></p>
+          </div>
+
+          <!-- Honeypot for future spam protection. Real visitors never see or fill this. -->
+          <div class="hp" aria-hidden="true">
+            <label for="company">Company</label>
+            <input id="company" name="company" type="text" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="form__foot field--full">
+            <button class="btn btn--lime" id="submitBtn" type="submit">Send message</button>
+            <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a class="brand brand--light" href="#home" aria-label="Devlattice Academy, back to top">
+            <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+              <rect width="32" height="32" fill="#F7F7F4"/>
+              <path d="M8 8h16M8 16h16M8 24h16M8 8v16M16 8v16M24 8v16" stroke="#171918" stroke-width="1.6" fill="none"/>
+            </svg>
+            <span class="brand__text">Devlattice <span>Academy</span></span>
+          </a>
+          <p>Practical technology education from Devlattice System. We help learners build skills through real projects.</p>
+        </div>
+
+        <nav class="footer__col" aria-label="Quick links">
+          <h2 class="footer__h">Quick links</h2>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#team">Team</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__col" aria-label="Programs">
+          <h2 class="footer__h">Programs</h2>
+          <ul id="footerPrograms"></ul>
+        </nav>
+
+        <div class="footer__col">
+          <h2 class="footer__h">Contact</h2>
+          <ul>
+            <li><a href="mailto:info@devlattice.example">info@devlattice.example</a></li>
+            <li><a href="tel:+000000000000">+00 000 000 0000</a></li>
+            <li>Your city, country</li>
+          </ul>
+          <ul class="socials socials--light" data-socials aria-label="Social media"></ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span id="year">2026</span> Devlattice Academy, a Devlattice System initiative. All rights reserved.</p>
+        <a href="#home" class="footer__top-link">Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top" data-icon="arrow-up"></button>
+
+  <!-- Lightbox (certificates) -->
+  <dialog class="lightbox" id="lightbox" aria-label="Preview">
+    <div class="lightbox__bar">
+      <p class="lightbox__title" id="lbTitle"></p>
+      <button class="icon-btn icon-btn--light" type="button" id="lbClose" aria-label="Close preview" data-icon="x"></button>
+    </div>
+    <div class="lightbox__stage">
+      <button class="icon-btn icon-btn--light" type="button" id="lbPrev" aria-label="Previous item" data-icon="arrow-left"></button>
+      <figure class="lightbox__figure">
+        <img id="lbImg" alt="" width="1200" height="850">
+        <figcaption id="lbCaption"></figcaption>
+      </figure>
+      <button class="icon-btn icon-btn--light" type="button" id="lbNext" aria-label="Next item" data-icon="arrow-right"></button>
+    </div>
+  </dialog>
+
+  <!-- Project details -->
+  <dialog class="modal" id="projectModal" aria-labelledby="pmTitle">
+    <button class="icon-btn modal__close" type="button" id="pmClose" aria-label="Close project details" data-icon="x"></button>
+    <p class="modal__cat" id="pmCat"></p>
+    <h3 class="modal__title" id="pmTitle"></h3>
+    <p id="pmDesc"></p>
+    <ul class="chips" id="pmTech"></ul>
+    <p class="modal__note">This is a sample project. Add a real link in the project’s <code>url</code> field in <code>js/script.js</code> and this button will open it directly.</p>
+  </dialog>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
